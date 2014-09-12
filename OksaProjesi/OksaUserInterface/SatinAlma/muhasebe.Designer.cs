@@ -1,4 +1,4 @@
-﻿namespace OksaUserInterface.SatinAlma
+﻿namespace OxxoUserInterface.SatinAlma
 {
     partial class muhasebe
     {
@@ -43,6 +43,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tedarikciBul = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txtPuan3 = new System.Windows.Forms.TextBox();
+            this.txtPuan2 = new System.Windows.Forms.TextBox();
+            this.txtPuan1 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.toplamUcretTB = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -191,6 +197,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.txtPuan3);
+            this.tabPage2.Controls.Add(this.txtPuan2);
+            this.tabPage2.Controls.Add(this.txtPuan1);
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.toplamUcretTB);
             this.tabPage2.Controls.Add(this.label13);
@@ -222,6 +234,54 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tedarikçiler";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // txtPuan3
+            // 
+            this.txtPuan3.Location = new System.Drawing.Point(241, 252);
+            this.txtPuan3.Name = "txtPuan3";
+            this.txtPuan3.Size = new System.Drawing.Size(58, 20);
+            this.txtPuan3.TabIndex = 25;
+            // 
+            // txtPuan2
+            // 
+            this.txtPuan2.Location = new System.Drawing.Point(241, 165);
+            this.txtPuan2.Name = "txtPuan2";
+            this.txtPuan2.Size = new System.Drawing.Size(58, 20);
+            this.txtPuan2.TabIndex = 25;
+            // 
+            // txtPuan1
+            // 
+            this.txtPuan1.Location = new System.Drawing.Point(241, 69);
+            this.txtPuan1.Name = "txtPuan1";
+            this.txtPuan1.Size = new System.Drawing.Size(58, 20);
+            this.txtPuan1.TabIndex = 25;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(252, 230);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(34, 13);
+            this.label19.TabIndex = 24;
+            this.label19.Text = "Puanı";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(252, 149);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(34, 13);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "Puanı";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(252, 52);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(34, 13);
+            this.label17.TabIndex = 24;
+            this.label17.Text = "Puanı";
             // 
             // label14
             // 
@@ -379,6 +439,7 @@
             this.tedarikci3CB.Name = "tedarikci3CB";
             this.tedarikci3CB.Size = new System.Drawing.Size(121, 21);
             this.tedarikci3CB.TabIndex = 6;
+            this.tedarikci3CB.SelectedIndexChanged += new System.EventHandler(this.tedarikci3CB_SelectedIndexChanged);
             // 
             // tedarikci2CB
             // 
@@ -387,6 +448,7 @@
             this.tedarikci2CB.Name = "tedarikci2CB";
             this.tedarikci2CB.Size = new System.Drawing.Size(121, 21);
             this.tedarikci2CB.TabIndex = 5;
+            this.tedarikci2CB.SelectedIndexChanged += new System.EventHandler(this.tedarikci2CB_SelectedIndexChanged);
             // 
             // tedarikci1CB
             // 
@@ -395,6 +457,7 @@
             this.tedarikci1CB.Name = "tedarikci1CB";
             this.tedarikci1CB.Size = new System.Drawing.Size(121, 21);
             this.tedarikci1CB.TabIndex = 4;
+            this.tedarikci1CB.SelectedIndexChanged += new System.EventHandler(this.tedarikci1CB_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -581,5 +644,11 @@
         private System.Windows.Forms.Button yeniTedarikciKaydet;
         private System.Windows.Forms.TextBox yeniTedarikciTB;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtPuan2;
+        private System.Windows.Forms.TextBox txtPuan1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtPuan3;
+        private System.Windows.Forms.Label label19;
     }
 }
