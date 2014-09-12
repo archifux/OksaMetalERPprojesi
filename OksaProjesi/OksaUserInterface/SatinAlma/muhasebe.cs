@@ -66,6 +66,11 @@ namespace OxxoUserInterface.SatinAlma
 
         }
 
+        private void muhasebe_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
        
       
     }

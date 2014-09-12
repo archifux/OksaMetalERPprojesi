@@ -584,6 +584,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "muhasebe";
             this.Text = "muhasebe";
+            this.Load += new System.EventHandler(this.muhasebe_Load_1);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
