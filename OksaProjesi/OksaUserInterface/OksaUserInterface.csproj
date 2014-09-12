@@ -258,6 +258,9 @@
     <EmbeddedResource Include="SatinAlma\ticket.resx">
       <DependentUpon>ticket.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sevkiyat\Deneme.resx">
+      <DependentUpon>Deneme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sevkiyat\SevkiyatEkran.resx">
       <DependentUpon>SevkiyatEkran.cs</DependentUpon>
     </EmbeddedResource>
