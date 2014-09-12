@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 18, 17.5" name="oksaDal">
+  <DataContextMoniker Name="/oksaDalDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dc3ed782-f8ee-482b-af66-93d47fa187c5" absoluteBounds="6.75, 4.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/oksaDalDataContext/tblAbgant" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28d406cf-5235-4aff-8841-67e1b941f59e" absoluteBounds="6.765, 5.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="baca20a2-a9fc-423e-90d7-d663bfb93bdd" absoluteBounds="6.75, 7.75, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/oksaDalDataContext/tblAbgantBand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3de17016-817e-4c15-b7e6-6919b5fd634e" absoluteBounds="6.765, 8.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a9c49f9-7469-4516-9b7b-3ad6605646cb" absoluteBounds="8.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/oksaDalDataContext/tblAbgantBandDuraklama" />
+      <nestedChildShapes>
+        <elementListCompartment Id="886cc73d-fd35-4d75-958d-c5c47061567c" absoluteBounds="8.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76b0b84a-f771-4cf1-995d-9ee63d60c458" absoluteBounds="9.75, 3.75, 2, 1.193992513020834">
+      <DataClassMoniker Name="/oksaDalDataContext/tblAbgantBantOperator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="736de596-de6d-4ebb-80d2-eeb4d1c72103" absoluteBounds="9.765, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbef6140-ce09-4bde-8992-b6a8ab5e9dac" absoluteBounds="9.75, 5.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/oksaDalDataContext/tblAbgantIsStoku" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9dfb6ee5-d60e-40bd-98b4-d8433c1ce707" absoluteBounds="9.765, 6.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba8b2bbe-5ea5-4e16-8e3e-704102f0d22f" absoluteBounds="9.75, 9.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/oksaDalDataContext/tblError" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a014ccdc-1a80-4a89-9cbe-261f81955dd6" absoluteBounds="9.765, 10.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ed9b0a4-0d77-42fb-963b-33c98021698b" absoluteBounds="0.75, 11.75, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/oksaDalDataContext/tblgenelIsStok" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e47aca6-fe74-4f85-970b-69c53331740a" absoluteBounds="0.765, 12.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="945deedd-9396-4329-95ca-db88ef5c8e2a" absoluteBounds="11.75, 0.75, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/oksaDalDataContext/tblLazer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c550185-f0fe-4de3-8b66-f2f594df9b9e" absoluteBounds="11.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0197a1ef-f92c-4b77-9d8b-2275de4753c7" absoluteBounds="3.75, 11.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/oksaDalDataContext/tblLazerBand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be584c87-39b8-4483-9363-13ebc5a0304f" absoluteBounds="3.765, 12.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e6892fd-ec33-4d96-a911-0209a80584a2" absoluteBounds="6.75, 11.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/oksaDalDataContext/tblLazerBantDuraklama" />
+      <nestedChildShapes>
+        <elementListCompartment Id="420ea5ae-ec2c-47fd-8bd7-119f1075fae7" absoluteBounds="6.765, 12.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce40bc87-04bc-45f9-88de-cca4f2555801" absoluteBounds="9.75, 11.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/oksaDalDataContext/tblLazerBantOperator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46f9b691-ef53-4bd3-8ce4-476084c792eb" absoluteBounds="9.765, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2119237-f65a-4544-82d8-44ea82c6cff4" absoluteBounds="12.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/oksaDalDataContext/tblLazerStok" />
+      <nestedChildShapes>
+        <elementListCompartment Id="44666117-89f7-4069-89b8-bfaa85acf745" absoluteBounds="12.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2ef52ff-04be-4554-b923-16510a43afc9" absoluteBounds="3.5, 8.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/oksaDalDataContext/tblMalzeme" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4aadbfc-e346-4258-ae67-79fe8d78e849" absoluteBounds="3.515, 9.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="075fdd0d-80bc-42d4-933d-f7825e3203d8" absoluteBounds="12.75, 6.75, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/oksaDalDataContext/tblPunch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72c04be9-367a-4506-8e2f-1aa4d39df91e" absoluteBounds="12.765, 7.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45bb6644-6b5a-4010-85f0-99945619e7b2" absoluteBounds="12.75, 9.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/oksaDalDataContext/tblPunchBand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e2512d6-b3b5-4153-a515-e20f473b7d7a" absoluteBounds="12.765, 10.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="998e25d6-6026-4ef0-9b47-b6a291bf5cbb" absoluteBounds="12.75, 12.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/oksaDalDataContext/tblPunchBandDuraklama" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ed66412-0bf3-4add-9e8e-bd446ba92f66" absoluteBounds="12.765, 13.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5da14faa-aada-4d2d-b356-88f8ff723baa" absoluteBounds="14.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/oksaDalDataContext/tblPunchBandOperator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dadd51f-5a81-471a-a5fe-208b1691a1c1" absoluteBounds="14.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f3a002f-8fd8-4071-8dd5-6ab5de58a364" absoluteBounds="3.75, 14.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/oksaDalDataContext/tblPunchIsStoku" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e697884-0076-42f0-a400-f0a38cde500d" absoluteBounds="3.765, 15.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1dca6f46-57f2-407b-8269-fbb8f0b2b03a" absoluteBounds="6.75, 14.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/oksaDalDataContext/tblReceteler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4f61e62-6412-4b73-8ed6-8294d3bf08e4" absoluteBounds="6.765, 15.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="111edec0-9cab-4a36-95b7-a0075167d2e1" absoluteBounds="6.25, 1.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/oksaDalDataContext/tblTalepDetay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e619359-a9ca-48c4-ab99-7f751c5a11b9" absoluteBounds="6.265, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40e187d4-c93d-4658-989b-ecf602f9bbb1" absoluteBounds="3.5, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/oksaDalDataContext/tblTalepler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78542183-5857-42a4-9899-9534335eafbe" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bb84d50-c9b6-460e-8e35-7f72707535f1" absoluteBounds="15.75, 2.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/oksaDalDataContext/tblTedarikci" />
+      <nestedChildShapes>
+        <elementListCompartment Id="700a00c6-0f41-4934-91a3-763b9a4c3da8" absoluteBounds="15.765, 3.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="625343ff-377b-4e00-bf61-ff2c54e07431" absoluteBounds="3.5, 4, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/oksaDalDataContext/tblTeklifler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a09f74d-3ac6-44af-ad7a-c37f1bfd323d" absoluteBounds="3.515, 4.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8101efb-fa74-4b87-9ced-0f404f3b1621" absoluteBounds="0.75, 3.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/oksaDalDataContext/tblUye" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46597206-4cdb-4377-ae54-14ef06b8287f" absoluteBounds="0.765, 3.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 9.98964680989583); (6.46875 : 9.98964680989583); (6.46875 : 3.6651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/oksaDalDataContext/tblMalzeme/tblMalzeme_tblTalepDetay" />
+      <nodes>
+        <classShapeMoniker Id="d2ef52ff-04be-4554-b923-16510a43afc9" />
+        <classShapeMoniker Id="111edec0-9cab-4a36-95b7-a0075167d2e1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.41429768880208); (6.25 : 2.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/oksaDalDataContext/tblTalepler/tblTalepler_tblTalepDetay" />
+      <nodes>
+        <classShapeMoniker Id="40e187d4-c93d-4658-989b-ecf602f9bbb1" />
+        <classShapeMoniker Id="111edec0-9cab-4a36-95b7-a0075167d2e1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 3.5); (1.75 : 2.41429768880208); (3.5 : 2.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/oksaDalDataContext/tblUye/tblUye_tblTalepler" />
+      <nodes>
+        <classShapeMoniker Id="c8101efb-fa74-4b87-9ced-0f404f3b1621" />
+        <classShapeMoniker Id="40e187d4-c93d-4658-989b-ecf602f9bbb1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.73159912109375); (3.5 : 4.73159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/oksaDalDataContext/tblUye/tblUye_tblTeklifler" />
+      <nodes>
+        <classShapeMoniker Id="c8101efb-fa74-4b87-9ced-0f404f3b1621" />
+        <classShapeMoniker Id="625343ff-377b-4e00-bf61-ff2c54e07431" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
