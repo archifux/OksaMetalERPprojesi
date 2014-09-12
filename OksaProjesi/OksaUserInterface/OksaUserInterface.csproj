@@ -150,6 +150,12 @@
     <Compile Include="SatinAlma\ticket.Designer.cs">
       <DependentUpon>ticket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sevkiyat\Deneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sevkiyat\Deneme.Designer.cs">
+      <DependentUpon>Deneme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sevkiyat\SevkiyatEkran.cs">
       <SubType>Form</SubType>
     </Compile>
