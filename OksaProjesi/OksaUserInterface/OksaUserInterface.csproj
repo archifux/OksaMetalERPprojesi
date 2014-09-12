@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,32 +45,259 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant1.Designer.cs">
+      <DependentUpon>Abkant1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant2.Designer.cs">
+      <DependentUpon>Abkant2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant3.Designer.cs">
+      <DependentUpon>Abkant3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineKontrol\Abkant4.Designer.cs">
+      <DependentUpon>Abkant4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineKontrol\EksikIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineKontrol\EksikIslem.Designer.cs">
+      <DependentUpon>EksikIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineKontrol\LazerIsTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineKontrol\LazerIsTakip.Designer.cs">
+      <DependentUpon>LazerIsTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineKontrol\PunchIsTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineKontrol\PunchIsTakip.Designer.cs">
+      <DependentUpon>PunchIsTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OksaDB.designer.cs" />
+    <Compile Include="OksaDB1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OksaDB.dbml</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SatinAlma\Kullaniciİslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlma\Kullaniciİslem.Designer.cs">
+      <DependentUpon>Kullaniciİslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatinAlma\muhasebe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlma\muhasebe.Designer.cs">
+      <DependentUpon>muhasebe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatinAlma\raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlma\raporlar.Designer.cs">
+      <DependentUpon>raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatinAlma\SiparisGir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlma\SiparisGir.Designer.cs">
+      <DependentUpon>SiparisGir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatinAlma\siparisPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlma\siparisPanel.Designer.cs">
+      <DependentUpon>siparisPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatinAlma\stokGir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlma\stokGir.Designer.cs">
+      <DependentUpon>stokGir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatinAlma\ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlma\ticket.Designer.cs">
+      <DependentUpon>ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sevkiyat\SevkiyatEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sevkiyat\SevkiyatEkran.Designer.cs">
+      <DependentUpon>SevkiyatEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\satinAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\satinAl.Designer.cs">
+      <DependentUpon>satinAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\uretimAnaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\uretimAnaEkrani.Designer.cs">
+      <DependentUpon>uretimAnaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\uretimdekiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\uretimdekiler.Designer.cs">
+      <DependentUpon>uretimdekiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\uretimdekiler2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\uretimdekiler2.Designer.cs">
+      <DependentUpon>uretimdekiler2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\uretimdekiler3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\uretimdekiler3.Designer.cs">
+      <DependentUpon>uretimdekiler3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\UretimMuduru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\UretimMuduru.Designer.cs">
+      <DependentUpon>UretimMuduru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\uretimPlanlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\uretimPlanlama.Designer.cs">
+      <DependentUpon>uretimPlanlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uretim\uretimRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim\uretimRaporlar.Designer.cs">
+      <DependentUpon>uretimRaporlar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineKontrol\Abkant1.resx">
+      <DependentUpon>Abkant1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineKontrol\Abkant2.resx">
+      <DependentUpon>Abkant2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineKontrol\Abkant3.resx">
+      <DependentUpon>Abkant3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineKontrol\Abkant4.resx">
+      <DependentUpon>Abkant4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineKontrol\EksikIslem.resx">
+      <DependentUpon>EksikIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineKontrol\LazerIsTakip.resx">
+      <DependentUpon>LazerIsTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineKontrol\PunchIsTakip.resx">
+      <DependentUpon>PunchIsTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OksaDB.dbml.layout">
+      <DependentUpon>OksaDB.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="SatinAlma\Kullaniciİslem.resx">
+      <DependentUpon>Kullaniciİslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatinAlma\muhasebe.resx">
+      <DependentUpon>muhasebe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatinAlma\SiparisGir.resx">
+      <DependentUpon>SiparisGir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatinAlma\siparisPanel.resx">
+      <DependentUpon>siparisPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatinAlma\stokGir.resx">
+      <DependentUpon>stokGir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatinAlma\ticket.resx">
+      <DependentUpon>ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sevkiyat\SevkiyatEkran.resx">
+      <DependentUpon>SevkiyatEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\satinAl.resx">
+      <DependentUpon>satinAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\uretimAnaEkrani.resx">
+      <DependentUpon>uretimAnaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\uretimdekiler.resx">
+      <DependentUpon>uretimdekiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\uretimdekiler2.resx">
+      <DependentUpon>uretimdekiler2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\uretimdekiler3.resx">
+      <DependentUpon>uretimdekiler3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\UretimMuduru.resx">
+      <DependentUpon>UretimMuduru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\uretimPlanlama.resx">
+      <DependentUpon>uretimPlanlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uretim\uretimRaporlar.resx">
+      <DependentUpon>uretimRaporlar.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OksaDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>OksaDB1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\keyimg.png" />
+    <Content Include="Assets\mimtechlogoson3.png" />
+    <Content Include="Assets\oksa22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

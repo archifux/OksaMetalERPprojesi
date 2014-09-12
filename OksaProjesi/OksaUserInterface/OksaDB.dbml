@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="OksaDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=89.19.29.253;User ID=USR140911175333" SettingsObjectName="OxxoUserInterface.Properties.Settings" SettingsPropertyName="DataSourceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblUye" Member="tblUyes">
+    <Type Name="tblUye">
+      <Column Name="uyeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="kullaniciAdi" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="sifre" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="cepTel" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="uyeTipi" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblUye_tblTeklifler" Member="tblTekliflers" ThisKey="uyeID" OtherKey="uyeID" Type="tblTeklifler" />
+      <Association Name="tblUye_tblTalepler" Member="tblTaleplers" ThisKey="uyeID" OtherKey="uyeID" Type="tblTalepler" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTeklifler" Member="tblTekliflers">
+    <Type Name="tblTeklifler">
+      <Column Name="teklifID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="teklifOlusturmaTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="uyeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tedarikciID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="talepDetayID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="aciklama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="birimFiyat" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="toplamFiyat" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="beklenenTeslimTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isApproad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isDelivered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="teslimEdilenTarih" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tblUye_tblTeklifler" Member="tblUye" ThisKey="uyeID" OtherKey="uyeID" Type="tblUye" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTedarikci" Member="tblTedarikcis">
+    <Type Name="tblTedarikci">
+      <Column Name="tedarikciID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vergiNo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tedarikciAdi" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="yetkiliKisi" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="telefon" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="puan" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="tedarikciTipi" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTalepler" Member="tblTaleplers">
+    <Type Name="tblTalepler">
+      <Column Name="talepID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="siparisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="uyeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="talepTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tblTalepler_tblTalepDetay" Member="tblTalepDetays" ThisKey="talepID" OtherKey="talepID" Type="tblTalepDetay" />
+      <Association Name="tblUye_tblTalepler" Member="tblUye" ThisKey="uyeID" OtherKey="uyeID" Type="tblUye" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTalepDetay" Member="tblTalepDetays">
+    <Type Name="tblTalepDetay">
+      <Column Name="talepID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="malzemeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kalinlik" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="en" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="boy" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="kg" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="adet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="uretimTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="aciklama" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+      <Association Name="tblTalepler_tblTalepDetay" Member="tblTalepler" ThisKey="talepID" OtherKey="talepID" Type="tblTalepler" IsForeignKey="true" />
+      <Association Name="tblMalzeme_tblTalepDetay" Member="tblMalzeme" ThisKey="malzemeID" OtherKey="malzemeID" Type="tblMalzeme" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblReceteler" Member="tblRecetelers">
+    <Type Name="tblReceteler">
+      <Column Name="stokKodu" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="prosessSirasi" Type="System.Data.Linq.Binary" DbType="Binary(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPunchIsStoku" Member="tblPunchIsStokus">
+    <Type Name="tblPunchIsStoku">
+      <Column Name="punchStokID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="siparisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="stokKodu" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="siparisAdedi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="uretilenAdet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isBand" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="bandGirisTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isDelivered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="bantBitistarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPunchBandOperator" Member="tblPunchBandOperators">
+    <Type Name="tblPunchBandOperator">
+      <Column Name="UyeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PunchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPunchBandDuraklama" Member="tblPunchBandDuraklamas">
+    <Type Name="tblPunchBandDuraklama">
+      <Column Name="punchStokID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="punchBandID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="durusZamani" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="yeniBaslamaZamani" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="durusSebebi" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="bitenMiktar" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bitenAdet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPunchBand" Member="tblPunchBands">
+    <Type Name="tblPunchBand">
+      <Column Name="punchBandID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="punchStokID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="punchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baslamaSuresi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="bitisSuresi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="siraNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPunch" Member="tblPunches">
+    <Type Name="tblPunch">
+      <Column Name="punchID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="punchName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="punchFoto" Type="System.Data.Linq.Binary" DbType="Binary(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ozellikleri" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="aciklama" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMalzeme" Member="tblMalzemes">
+    <Type Name="tblMalzeme">
+      <Column Name="malzemeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="malzemeAdi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="aciklama" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblMalzeme_tblTalepDetay" Member="tblTalepDetays" ThisKey="malzemeID" OtherKey="malzemeID" Type="tblTalepDetay" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLazerStok" Member="tblLazerStoks">
+    <Type Name="tblLazerStok">
+      <Column Name="LStokID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="stokGirisTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="siparisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="stokKodu" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="isBand" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="bandGirisTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isdelivered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLazerBantOperator" Member="tblLazerBantOperators">
+    <Type Name="tblLazerBantOperator">
+      <Column Name="uyeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lazerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLazerBantDuraklama" Member="tblLazerBantDuraklamas">
+    <Type Name="tblLazerBantDuraklama">
+      <Column Name="lazerStokID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lazerBantID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LdurusZamani" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LyeniBaslamaZamani" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LdurusSebebi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LbitenMiktar" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LbitenAdet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLazerBand" Member="tblLazerBands">
+    <Type Name="tblLazerBand">
+      <Column Name="LazerBandID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LazerStokID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LazerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BaslamaSuresi" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="BitisSuresi" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="SiraNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLazer" Member="tblLazers">
+    <Type Name="tblLazer">
+      <Column Name="lazerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="lazerName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lazerFoto" Type="System.Data.Linq.Binary" DbType="Binary(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ozellikleri" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="aciklama" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblgenelIsStok" Member="tblgenelIsStoks">
+    <Type Name="tblgenelIsStok">
+      <Column Name="genelID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="siparisKodu" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="stokKodu" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="siparisTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="cariKodu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="adet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="teslimTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isdelivered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="planlamaTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblError" Member="tblErrors">
+    <Type Name="tblError">
+      <Column Name="ErrorId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="aciklama" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAbgantIsStoku" Member="tblAbgantIsStokus">
+    <Type Name="tblAbgantIsStoku">
+      <Column Name="abgantStokID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="siparisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="stokKodu" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="siparisAdedi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="uretilenAdet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isBand" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="bandGirisTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isDelivered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="bantBitisTarihi" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAbgantBantOperator" Member="tblAbgantBantOperators">
+    <Type Name="tblAbgantBantOperator">
+      <Column Name="uyeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="abgantID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAbgantBandDuraklama" Member="tblAbgantBandDuraklamas">
+    <Type Name="tblAbgantBandDuraklama">
+      <Column Name="abgantStokID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="abgantBantID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="durusZamani" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="yeniBaslamaZamani" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="durusSebebi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="bitenMiktar" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bitenAdet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAbgantBand" Member="tblAbgantBands">
+    <Type Name="tblAbgantBand">
+      <Column Name="AbgantBandID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AbgantStokID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AbgantID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BaslamaSuresi" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="BitisSuresi" Type="System.String" DbType="VarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="SiraNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAbgant" Member="tblAbgants">
+    <Type Name="tblAbgant">
+      <Column Name="abgantID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="abgantName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="abgantFoto" Type="System.Data.Linq.Binary" DbType="Binary(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ozellikleri" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="aciklama" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
