@@ -52,14 +52,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSevkiyatGelen
             // 
             this.lblSevkiyatGelen.AutoSize = true;
-            this.lblSevkiyatGelen.Location = new System.Drawing.Point(13, 13);
+            this.lblSevkiyatGelen.Location = new System.Drawing.Point(17, 16);
+            this.lblSevkiyatGelen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSevkiyatGelen.Name = "lblSevkiyatGelen";
-            this.lblSevkiyatGelen.Size = new System.Drawing.Size(79, 13);
+            this.lblSevkiyatGelen.Size = new System.Drawing.Size(103, 17);
             this.lblSevkiyatGelen.TabIndex = 0;
             this.lblSevkiyatGelen.Text = "Gelen Sevkiyat";
             // 
@@ -71,9 +73,10 @@
             this.columnHeader3,
             this.columnHeader7});
             this.lstGelenSevk.GridLines = true;
-            this.lstGelenSevk.Location = new System.Drawing.Point(16, 30);
+            this.lstGelenSevk.Location = new System.Drawing.Point(21, 37);
+            this.lstGelenSevk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstGelenSevk.Name = "lstGelenSevk";
-            this.lstGelenSevk.Size = new System.Drawing.Size(324, 199);
+            this.lstGelenSevk.Size = new System.Drawing.Size(431, 244);
             this.lstGelenSevk.TabIndex = 1;
             this.lstGelenSevk.UseCompatibleStateImageBehavior = false;
             this.lstGelenSevk.View = System.Windows.Forms.View.Details;
@@ -101,9 +104,10 @@
             // lblSevkiyatGiden
             // 
             this.lblSevkiyatGiden.AutoSize = true;
-            this.lblSevkiyatGiden.Location = new System.Drawing.Point(13, 250);
+            this.lblSevkiyatGiden.Location = new System.Drawing.Point(17, 308);
+            this.lblSevkiyatGiden.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSevkiyatGiden.Name = "lblSevkiyatGiden";
-            this.lblSevkiyatGiden.Size = new System.Drawing.Size(79, 13);
+            this.lblSevkiyatGiden.Size = new System.Drawing.Size(103, 17);
             this.lblSevkiyatGiden.TabIndex = 0;
             this.lblSevkiyatGiden.Text = "Giden Sevkiyat";
             // 
@@ -115,9 +119,10 @@
             this.columnHeader6,
             this.columnHeader9});
             this.lstGidenSevk.GridLines = true;
-            this.lstGidenSevk.Location = new System.Drawing.Point(16, 266);
+            this.lstGidenSevk.Location = new System.Drawing.Point(21, 327);
+            this.lstGidenSevk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstGidenSevk.Name = "lstGidenSevk";
-            this.lstGidenSevk.Size = new System.Drawing.Size(324, 198);
+            this.lstGidenSevk.Size = new System.Drawing.Size(431, 243);
             this.lstGidenSevk.TabIndex = 1;
             this.lstGidenSevk.UseCompatibleStateImageBehavior = false;
             this.lstGidenSevk.View = System.Windows.Forms.View.Details;
@@ -145,35 +150,41 @@
             // lstSevkIcerik
             // 
             this.lstSevkIcerik.FormattingEnabled = true;
-            this.lstSevkIcerik.Location = new System.Drawing.Point(365, 30);
+            this.lstSevkIcerik.ItemHeight = 16;
+            this.lstSevkIcerik.Location = new System.Drawing.Point(487, 37);
+            this.lstSevkIcerik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstSevkIcerik.Name = "lstSevkIcerik";
-            this.lstSevkIcerik.Size = new System.Drawing.Size(155, 199);
+            this.lstSevkIcerik.Size = new System.Drawing.Size(205, 244);
             this.lstSevkIcerik.TabIndex = 2;
             // 
             // lblSevkIcerik
             // 
             this.lblSevkIcerik.AutoSize = true;
-            this.lblSevkIcerik.Location = new System.Drawing.Point(365, 13);
+            this.lblSevkIcerik.Location = new System.Drawing.Point(487, 16);
+            this.lblSevkIcerik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSevkIcerik.Name = "lblSevkIcerik";
-            this.lblSevkIcerik.Size = new System.Drawing.Size(79, 13);
+            this.lblSevkIcerik.Size = new System.Drawing.Size(102, 17);
             this.lblSevkIcerik.TabIndex = 3;
             this.lblSevkIcerik.Text = "Sevkiyat İçeriği";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(362, 250);
+            this.label1.Location = new System.Drawing.Point(483, 308);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(102, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sevkiyat İçeriği";
             // 
             // lstSevkGidenIcerik
             // 
             this.lstSevkGidenIcerik.FormattingEnabled = true;
-            this.lstSevkGidenIcerik.Location = new System.Drawing.Point(365, 266);
+            this.lstSevkGidenIcerik.ItemHeight = 16;
+            this.lstSevkGidenIcerik.Location = new System.Drawing.Point(487, 327);
+            this.lstSevkGidenIcerik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstSevkGidenIcerik.Name = "lstSevkGidenIcerik";
-            this.lstSevkGidenIcerik.Size = new System.Drawing.Size(155, 199);
+            this.lstSevkGidenIcerik.Size = new System.Drawing.Size(205, 244);
             this.lstSevkGidenIcerik.TabIndex = 2;
             // 
             // checkedListBox1
@@ -184,16 +195,18 @@
             "Ürün Hasarlı",
             "Adet Eksik",
             "SİPARİŞ BAŞARILI"});
-            this.checkedListBox1.Location = new System.Drawing.Point(537, 30);
+            this.checkedListBox1.Location = new System.Drawing.Point(716, 37);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 49);
+            this.checkedListBox1.Size = new System.Drawing.Size(159, 55);
             this.checkedListBox1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(718, 206);
+            this.button1.Location = new System.Drawing.Point(957, 254);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 5;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = true;
@@ -201,18 +214,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(537, 86);
+            this.label2.Location = new System.Drawing.Point(716, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 13);
+            this.label2.Size = new System.Drawing.Size(189, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Sorun varsa açıklama giriniz.";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(540, 103);
+            this.textBox1.Location = new System.Drawing.Point(720, 127);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 97);
+            this.textBox1.Size = new System.Drawing.Size(336, 118);
             this.textBox1.TabIndex = 7;
             // 
             // checkedListBox2
@@ -223,16 +238,18 @@
             "Ürün Hasarlı",
             "Adet Eksik",
             "SİPARİŞ BAŞARILI"});
-            this.checkedListBox2.Location = new System.Drawing.Point(534, 265);
+            this.checkedListBox2.Location = new System.Drawing.Point(712, 326);
+            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(120, 49);
+            this.checkedListBox2.Size = new System.Drawing.Size(159, 55);
             this.checkedListBox2.TabIndex = 4;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(715, 441);
+            this.button2.Location = new System.Drawing.Point(953, 543);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 5;
             this.button2.Text = "Kaydet";
             this.button2.UseVisualStyleBackColor = true;
@@ -240,25 +257,37 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(534, 321);
+            this.label3.Location = new System.Drawing.Point(712, 395);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 13);
+            this.label3.Size = new System.Drawing.Size(189, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Sorun varsa açıklama giriniz.";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(537, 338);
+            this.textBox2.Location = new System.Drawing.Point(716, 416);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 97);
+            this.textBox2.Size = new System.Drawing.Size(336, 118);
             this.textBox2.TabIndex = 7;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(982, 308);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // SevkiyatEkran
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 479);
+            this.ClientSize = new System.Drawing.Size(1092, 590);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -275,6 +304,7 @@
             this.Controls.Add(this.lstGidenSevk);
             this.Controls.Add(this.lstGelenSevk);
             this.Controls.Add(this.lblSevkiyatGelen);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SevkiyatEkran";
             this.Text = "Sevkiyat";
             this.Load += new System.EventHandler(this.SevkiyatEkran_Load);
@@ -309,5 +339,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button3;
     }
 }
