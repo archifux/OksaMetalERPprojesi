@@ -6,7 +6,7 @@ using System.Text;
 
 namespace OksaMachineLayer
 {
-    class Kullanicilar
+    public class Kullanicilar
     {
 
         public int uyeID { get; set; }
@@ -16,7 +16,7 @@ namespace OksaMachineLayer
         public string ceptelefonu { get; set; }
         public string  uyetipi { get; set; }
         public bool durum { get; set; }
-
+        
 
         oksaDalDataContext dal = new oksaDalDataContext();
         public Kullanicilar(string username  , string pass)

@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OksaMachineLayer;
+using OksaMachineLayer.DAL;
 
 namespace OksaUserInterface
 {
@@ -19,9 +21,12 @@ namespace OksaUserInterface
         {
             InitializeComponent();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
+            Kullanicilar k = new Kullanicilar(comboBox1.SelectedItem.ToString(), textBox2.Text);
+           
+
             try
             {
                 switch (comboBox1.SelectedItem.ToString())
