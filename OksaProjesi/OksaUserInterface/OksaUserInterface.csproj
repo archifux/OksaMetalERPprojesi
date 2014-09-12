@@ -299,6 +299,12 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OksaMachineLayer\OksaMachineLayer.csproj">
+      <Project>{b2821d8c-4fea-4ada-9c5f-38a640a4aea1}</Project>
+      <Name>OksaMachineLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
